@@ -59,9 +59,7 @@ jQuery(document).ready(function($) {
         var url = $(this).attr('href');
         var parts = url.split("#");
         var trgt = parts[1];
-        if (document.documentElement.clientWidth > 641) {
-          var offset = $('.site-nav').height();
-        }
+        var offset = $('.site-nav').height();
         if(trgt != undefined) {
             event.preventDefault();
             $('html,body').animate({scrollTop:$(this.hash).offset().top - offset}, 500);
@@ -81,15 +79,21 @@ jQuery(document).ready(function($) {
         }
       });
     });
+
+    // popins
+    $('.option img').click(function() {
+      $(this).parent().find('.popin').toggleClass('hidden');
+    });
+    $('.popin').click(function() {
+      $(this).toggleClass('hidden');
+    });
 });
 
 function scrollToElm() {
     var url = document.location.href;
     var parts = url.split("#");
     var trgt = parts[1];
-    if (document.documentElement.clientWidth > 641) {
-      var offset = $('.site-nav').height();
-    }
+    var offset = $('.site-nav').height();
     if(trgt != undefined) {
         jQuery('html,body').animate({scrollTop:jQuery('#'+trgt).offset().top - offset}, 500);
     }
