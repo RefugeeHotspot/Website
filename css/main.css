@@ -95,6 +95,10 @@ a:visited { color: #205caa; }
     margin: 0 10px;
 }
 
+.site-nav .page-link.current {
+    color: #2a7ae2;
+}
+
 .site-nav .page-link:first-child {
     background: url(../images/favicon.png) no-repeat 0 -15px;
     width: 48px;
@@ -149,6 +153,28 @@ a:visited { color: #205caa; }
     max-width: 100%;
     height: auto;
     margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.option img:hover {
+    opacity: 0.7;
+}
+
+.option .popin {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    color: darkgray;
+    z-index: 2;
+    padding: 3em;
+    box-sizing: border-box;
+}
+
+.option .hidden {
+    display: none;
 }
 
 /* forms */
