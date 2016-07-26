@@ -71,98 +71,98 @@ a:visited { color: #205caa; }
 }
 
 .site-subtitle {
-	color: #fff;
-	font-weight: bold;
+    color: #fff;
+    font-weight: bold;
     font-size: 1.9em;
     line-height: 1.3em;
 }
 
 .site-nav {
-	position: fixed;
-	top: 0;
+    position: fixed;
+    top: 0;
     width: 100%;
     left: 0;
     padding: 0.5em;
     text-transform: uppercase;
     font-weight: bold;
- 	background: #0b1728;
+     background: #0b1728;
 }
 
 .site-nav .menu-icon { display: none; }
 
 .site-nav .page-link {
-	color: #fff;
+    color: #fff;
     margin: 0 10px;
 }
 
 .site-nav .page-link:first-child {
-	background: url(../images/favicon.png) no-repeat 0 -15px;
-	width: 48px;
-	height: 25px;
-	display: inline-block;
-	text-indent: -10000px;
+    background: url(../images/favicon.png) no-repeat 0 -15px;
+    width: 48px;
+    height: 25px;
+    display: inline-block;
+    text-indent: -10000px;
 }
 
 /* sections */
 
 .section {
-	padding: 2em 0;
+    padding: 2em 0;
    background: #fff url(../images/circles.png) center center repeat;
 }
 
 .section .section-title {
-	text-align: center;
+    text-align: center;
     font-size: 1.8em;
-	line-height: 1.35em;
+    line-height: 1.35em;
     margin-bottom: 1em;
     font-weight: normal;
 }
 
 .section p {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .section:nth-child(odd) {
- 	background-color: #0b1728;
-	color: #fff;
+     background-color: #0b1728;
+    color: #fff;
 }
 
 .section:nth-child(odd) .section-title {
-	color: #ffcb51;
+    color: #ffcb51;
 }
 
 .footer {
-	border-top: 1px solid #eee;
-	padding-top: 1em;
+    border-top: 1px solid #eee;
+    padding-top: 1em;
 }
 
 .option {
-	display: inline-block;
-	width: 32%;
-	padding: 0 0.5em;
-	box-sizing: border-box;
-	text-align: center;
-	vertical-align: top;
+    display: inline-block;
+    width: 32%;
+    padding: 0 0.5em;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
 }
 
 .option img {
-	max-width: 100%;
-	height: auto;
-	margin-bottom: 1em;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
 }
 
 /* forms */
 
 form {
-	text-align: center;
+    text-align: center;
 }
 
 .form {
-	padding: 0.4em;
+    padding: 0.4em;
 }
 
 .submit {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 /* Post styles */
@@ -228,11 +228,11 @@ form {
 .post-content ol { padding-left: 20px; }
 
 .github {
-	background: url(../images/github.png) no-repeat;
-	text-indent: -10000px;
-	width: 60px;
-	height: 60px;
-	display: inline-block;
+    background: url(../images/github.png) no-repeat;
+    text-indent: -10000px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
 }
 
 /* media queries */
@@ -251,7 +251,7 @@ form {
     position: fixed;
     z-index: 10;
     right: 8px;
- 	background: #fff;
+     background: #fff;
   }
 
   .site-nav .menu-icon {
@@ -262,7 +262,7 @@ form {
     width: 36px;
     text-align: center;
     line-height: 36px;
-	padding-right: 1em;
+    padding-right: 1em;
   }
 
   .site-nav .menu-icon svg { width: 18px; height: 16px; }
@@ -271,7 +271,7 @@ form {
     clear: both;
     margin-bottom: 5px;
     display: none;
-	text-align: center;
+    text-align: center;
   }
 
   .site-nav:hover .trigger { display: block; }
@@ -281,7 +281,7 @@ form {
     line-height: 1.25;
     padding: 5px;
     margin: 0;
-	cursor: pointer;
+    cursor: pointer;
     color: #2a7ae2;
   }
 
