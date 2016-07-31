@@ -166,15 +166,26 @@ a:visited { color: #205caa; }
     position: fixed;
     top: 0;
     left: 0;
-    background: #fff;
+    background: rgba(0,0,0,0.8);
     color: darkgray;
     z-index: 2;
     padding: 3em;
     box-sizing: border-box;
+    overflow: auto;
+    font-size: .85em;
 }
 
 .option .hidden {
     display: none;
+}
+
+.option .popin .post-content {
+    margin: auto;
+    text-align: left;
+    max-width: 600px;
+    width: 90%;
+    background: #fff;
+    padding: .75em 2em;
 }
 
 /* forms */
@@ -185,6 +196,25 @@ form {
 
 .form {
     padding: 0.4em;
+    background: #fff;
+    padding: 0.2em 0.4em;
+    border: 1px solid #ddd;
+}
+
+select.form {
+    margin-bottom: 1em;
+}
+
+.button.form {
+    padding: 0.5em 1em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #2a7ae2;
+    color: #fff;
+}
+
+.button.form:hover {
+    background-color: #0b1728;
 }
 
 .submit {
@@ -251,7 +281,9 @@ form {
 }
 
 .post-content ul,
-.post-content ol { padding-left: 20px; }
+.post-content ol {
+    padding-left: 20px;
+}
 
 .github {
     background: url(../images/github.png) no-repeat;
