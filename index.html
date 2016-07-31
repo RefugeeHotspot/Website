@@ -54,7 +54,7 @@
     <section class="section" id="what">
         <div class="wrap">
             <h3 class="section-title">People and the Internet should be free</h3>
-            <p>A mobile device to remove the obstacles that refugees face when it comes to access the internet is being developed by The Internet Society Netherlands (ISOC-NL) in dialogue with refugee collectives in the Netherlands, Belgium and Germany. This devices will provide connectivity in each of the collectives physical locations and thanks to its battery will keep providing connectivity in the situation in which a collective is being evicted from their location.</p>
+            <p>A mobile device to remove the obstacles that refugees face when it comes to access the Internet is being developed by The Internet Society Netherlands (ISOC-NL) in dialogue with refugee collectives in the Netherlands, Belgium and Germany. This devices will provide connectivity in each of the collectives physical locations and thanks to its battery will keep providing connectivity in the situation in which a collective is being evicted from their location.</p>
             <p>The device can be taken into demonstrations, marches or specific actions. It will be possible to distribute files, images, statements and flyers wireless using the landingpage.</p>
             <p>We're aiming to deploy this device as wide as possible, starting with collectives in the Netherlands, Germany and Belgium.</p>
         </div>
@@ -75,32 +75,81 @@
                 <img src="images/option1.png" alt="" />
                 <h4>GIVE</h4>
                 <p>Give to the project by donating a refugee hotspot to a group of refugees or help us pay bandwidth.</p>
+                <div class="hidden popin">
+                    <div class="post-content">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <input name="cmd" type="hidden" value="_donations" />
+                        <input name="business" type="hidden" value="nielsto@gmail.com" />
+                        <input name="item_name" type="hidden" value="Refugee Hotspot one-time donation" />
+                        <input name="no_shipping" type="hidden" value="1" />
+                        <input name="lc" type="hidden" value="US" />
+                        <input type="hidden" name="currency_code" value="EUR">
+                        We welcome your donations:<br />
+                        <select name="amount" class="form">
+                            <option name="amount" value="Select a type">Select your donation</option>
+                            <option name="amount" value="10.00">Like the project - 10 €</option>
+                            <option name="amount" value="35.00">One month of wireless Internet access - 35 €</option>
+                            <option name="amount" value="50.00">One month of wired Internet access - 50 €</option>
+                            <option name="amount" value="60.00">Two months of wireless Internet access - 60 €</option>
+                            <option name="amount" value="155.00">Give a Refugee Hotspot to a refugee community - 155 €</option>
+                            <option name="amount" value="360.00">Year worth of wired Internet access - 360 €</option>
+                            <option name="amount" value="420.00">Year of wireless Internet access - 420 €</option>
+                        </select> <br />
+                        <input class="button form" type="submit" value="Donate" />
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="option" id="diy">
                 <img src="images/option2.png" alt="" />
                 <h4>DIY</h4>
                 <p>Buy the equipment, put it together yourself, and optionally 3D print the casing.</p>
                 <div class="hidden popin">
-                    <p>Follow the instructions from: <a href="https://github.com/RefugeeHotspot/RefugeeHotspot" target="_blank">https://github.com/RefugeeHotspot/RefugeeHotspot</a></p>
-                    <p>
-                    A more detailed manual will come soon, as well as the instructions for
-                    the lasercutting and assemblage of the casing.
-                    </p>
-                    <p>
-                    The equipment that you will need:
-                    <br />
-                    Raspberry Pi 3<br />
-                    USB Y cable<br />
-                    Huawei E303 USB modem<br />
-                    Power adapter + cable<br />
-                    USB - micro USB Power cable (battery to Pi)<br />
-                    Micro SD card</p>
+                    <div class="post-content">
+                        <p>Follow the instructions from: <a href="https://github.com/RefugeeHotspot/RefugeeHotspot">https://github.com/RefugeeHotspot/RefugeeHotspot</a></p>
+                        <p>
+                        The equipment that you will need:
+                        <br />
+                        Raspberry Pi 3<br />
+                        USB Y cable<br />
+                        Huawei E303 USB modem<br />
+                        Power adapter + cable<br />
+                        USB - micro USB Power cable (battery to Pi)<br />
+                        Micro SD card</p>
+                        <ol>
+                            <li>Download the image here: <a href="37.218.242.80/refugee-hotspot-beta1.img.gz">http://37.218.242.80/refugee-hotspot-beta1.img.gz</a></li>
+                            <li><b>For Windows and Mac:</b> Unzip the Refugee Hotspot image</li>
+                            <li>Download the Etcher SD card image utility <a href="http://www.etcher.io/">http://www.etcher.io/</a></li>
+                            <li>Run Etcher and select the Refugee Hotspot image you unzipped on your computer or laptop.</li>
+                            <li>Select the SD card drive. Note that the software may have already selected the right drive.</li>
+                            <li>Finally, click Burn to transfer Raspbian to the SD card. You'll see a progress bar that tells you how much is left to do. Once complete, the utility will automatically eject/unmount the SD card so it's safe to remove it from the computer and plug it into the Raspberry Pi.</li>
+                            <li>You should be good to go, start the Raspberry Pi and login to your Refugee Hotspot, or connect a monitor and a keyboard and run the Installer.</li>
+                            <li><b>For Linux: </b>Untar the Refugee Hotspot image</li>
+                            <li>Open a terminal and type: <code>sudo dd bs=4M if=[IMAGE FILE] of=[PATH TO SDCARD]</code>
+                            (where IMAGE FILE is probably something like ~/Downloads/refugee-hotspot-beta1.img and PATH TO SDCARD is probably something like: /dev/mmcblk0)</li>
+                            <li>Type: <code>sync</code></li>
+                            <li>You should be good to go, start the Raspberry Pi and login to your Refugee Hotspot, or connect a monitor and a keyboard and run the Installer.</li>
+                    </div>
                 </div>
             </div>
             <div class="option" id="buy">
                 <img src="images/option3.png" alt="" />
                 <h4>BUY</h4>
                 <p>Buy a fully installed Refugee Hotspot including or excluding casing.</p>
+                <div class="hidden popin">
+                    <div class="post-content">
+                        <p>Buy a fully installed Refugee Hotspot - 175€. <br /><br />
+                        (data modem - 36€, cables and power adapter - 15€, 2000mAH battery - 30€, casing - 20€, Raspberry Pi 3 - 48€, SD card - 7€, shipping cost - 20€</p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="business" value="nielsto@gmail.com">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="item_name" value="BUY a fully installed Refugee Hotspot">
+                            <input type="hidden" name="amount" value="175.00">
+                            <input type="hidden" name="currency_code" value="EUR">
+                            <input type="hidden" name="undefined_quantity" value="1">
+                            <input class="button form" type="submit" value="Buy" />
+                        </form>
+                    </div>
             </div>
         </div>
     </section>
