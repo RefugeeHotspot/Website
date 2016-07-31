@@ -84,9 +84,12 @@ jQuery(document).ready(function($) {
     $('.option img').click(function() {
       $(this).parent().find('.popin').toggleClass('hidden');
     });
-    $('.popin').click(function() {
+    $('.popin').click(function(e) {
       $(this).toggleClass('hidden');
     });
+    $('.popin .post-content').click(function(e) {
+			e.stopPropagation();
+		});
 });
 
 function scrollToElm() {
