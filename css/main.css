@@ -1,7 +1,7 @@
 /* Base */
 /* ----------------------------------------------------------*/
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /*
  *
@@ -20,13 +20,17 @@ body {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 300;
-   background: #fff url(../images/circles.png) center center repeat;
+  font-weight: 400;
+  background: #fff url(../images/circles.png) center center repeat;
 }
 
 a         { color: #2a7ae2; text-decoration: none; }
 a:hover   { color: #000; text-decoration: underline; }
 a:visited { color: #205caa; }
+
+b, strong {
+    font-weight: 700;
+}
 
 /* Utility */
 
