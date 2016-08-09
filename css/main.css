@@ -135,6 +135,22 @@ a:visited { color: #205caa; }
     color: #ffcb51;
 }
 
+.footer .section-title {
+    margin-bottom: .3em;
+    color: #ffcb51;
+}
+
+.footer #sponsors {
+    margin-bottom: 3em;
+}
+
+.footer img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1em;
+    max-width: 30%;
+}
+
 .footer {
     border-top: 1px solid #eee;
     padding-top: 1em;
