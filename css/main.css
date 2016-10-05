@@ -1,7 +1,7 @@
 /* Base */
 /* ----------------------------------------------------------*/
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /*
  *
@@ -289,6 +289,7 @@ select.form {
 .post-content h4 {
   font-size: 20px;
   letter-spacing: -1px;
+  font-weight: 400;
 }
 
 .post-content blockquote {
